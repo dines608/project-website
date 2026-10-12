@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Golden Glow Jewellery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fffaf0;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #111;
+            color: #d4af37;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),
+            url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338")
+            center/cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background-color: #d4af37;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #b8962e;
+        }
+
+        /* Products */
+        .products {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .products h2 {
+            color: #b8860b;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin: 15px 0 8px;
+        }
+
+        .price {
+            color: #b8860b;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* About */
+        .about {
+            background-color: #f5ecd7;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #b8860b;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #b8860b;
+            margin-bottom: 20px;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 80%;
+            max-width: 500px;
+            padding: 12px;
+            margin: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact textarea {
+            height: 120px;
+        }
+
+        .contact button {
+            background-color: #111;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #d4af37;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">✨ Golden Glow</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Jewellery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Elegant Jewellery</h1>
+            <p>Beauty that shines forever</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+
+        <h2>Our Jewellery Collection</h2>
+
+        <div class="product-container">
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
+                <h3>Gold Necklace</h3>
+                <p class="price">₹45,000</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e">
+                <h3>Diamond Ring</h3>
+                <p class="price">₹75,000</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908">
+                <h3>Gold Earrings</h3>
+                <p class="price">₹25,000</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638">
+                <h3>Gold Bracelet</h3>
+                <p class="price">₹35,000</p>
+                <a href="#" class="btn">Buy Now</a>
+
+
+<div class="product">
+    <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d"
+         alt="Gold necklace">
+    <h3>Designer Necklace</h3>
+    <p class="price">₹55,000</p>
+    <a href="#" class="btn">Buy Now</a>
+</div>
+
+<div class="product">
+    <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638"
+         alt="Gold bracelet">
+    <h3>Gold Bracelet</h3>
+    <p class="price">₹35,000</p>
+    <a href="#" class="btn">Buy Now</a>
+</div>
+
+<div class="product">
+    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e"
+         alt="Diamond ring">
+    <h3>Diamond Ring</h3>
+    <p class="price">₹75,000</p>
+    <a href="#" class="btn">Buy Now</a>
+</div>
+
+<div class="product">
+    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908"
+         alt="Fashion earrings">
+    <h3>Designer Earrings</h3>
+    <p class="price">₹15,000</p>
+    <a href="#" class="btn">Buy Now</a>
+</div>
+
+<div class="product">
+    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a"
+         alt="Jewellery collection">
+    <h3>Traditional Jewellery</h3>
+    <p class="price">₹28,000</p>
+    <a href="#" class="btn">Buy Now</a>
+</div>
+
+<div class="product">
+    <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0"
+         alt="Gold jewellery">
+    <h3>Elegant Gold Jewellery</h3>
+    <p class="price">₹40,000</p>
+    <a href="#" class="btn">Buy Now</a>
+</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>About Golden Glow</h2>
+
+        <p>
+            Golden Glow Jewellery offers beautifully designed gold,
+            diamond and traditional jewellery. Our collection combines
+            modern designs with timeless elegance to make every occasion
+            special.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+
+            <input type="email" placeholder="Your Email" required><br>
+
+            <input type="tel" placeholder="Phone Number"><br>
+
+            <textarea placeholder="Your Message"></textarea><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Golden Glow Jewellery | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+            
